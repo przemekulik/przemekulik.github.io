@@ -7,22 +7,24 @@
 </head>
 <body>
     <p>Test page</p>
+
     <script>
       (function(w, d, s, o, f, js, fjs) {
         w['aha-widget'] = o;w[o] = w[o] || function() {(w[o].q = w[o].q || []).push(arguments);};
         js = d.createElement(s);fjs = d.getElementsByTagName(s)[0];js.id = o;js.src = f;js.async = 1;fjs.parentNode.insertBefore(js, fjs);
-      })(window,document,'script','aha','https://cdn.aha.io:443/assets/feedback/feedback.js');
+      })(window,document,'script','aha','https://cdn.aha.io/assets/feedback/feedback.js');
     
       aha('initialize', {
         account: 'solace',
         applicationId: '7582217993959045355',
         user: {
-          id: '1',
-          name: 'Przemek Kulik',
-          email: 'przemek.kulik@gmail.com',
+          id: 'UNIQUE_USER_IDENTIFICATION',
+          name: 'USER_NAME',
+          email: 'USER_EMAIL_ADDRESS',
         },
       });
     </script>
+
 
 </body>
 </html>
